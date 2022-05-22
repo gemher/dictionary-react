@@ -10,15 +10,17 @@ function App() {
       <main>
         <Dictionary />
       </main>
-      <footer>
-        <a
-          href="https://github.com/gemher/dictionary-react"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Open-source
-        </a>{" "}
-        code by Gema Hernandez
+      <footer className="App-footer">
+        <small>
+          <a
+            href="https://github.com/gemher/dictionary-react"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Open-source
+          </a>{" "}
+          code by Gema Hernandez
+        </small>
       </footer>
     </div>
   );
