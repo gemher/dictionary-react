@@ -22,7 +22,7 @@ export default function Dictionary() {
           placeholder={"City"}
           onChange={changeCity}
         />
-        <input type="submit" class="btn btn-dark" value="Search" />
+        <input type="submit" className="btn btn-dark" value="Search" />
       </form>
       <h2>{message}</h2>
     </div>
