@@ -1,30 +1,24 @@
 import React, { useState } from "react";
+import "./Dictionary.css";
 
 export default function Dictionary() {
-  const [city, setCity] = useState("");
-  const [message, setMessage] = useState("");
+  let [keyword, setKeyword] = useState("");
 
-  function handleSubmit(event) {
+  function search(event) {
     event.preventDefault();
-    setMessage(`It is currently 70ºF in ${city}`);
+    alert(`Searching for ${keyword} definition`);
   }
 
-  function changeCity(event) {
-    setCity(event.target.value);
+  function handleKeywordChange(event) {
+    setKeyword(event.target.value);
   }
 
   return (
-    <div className="Search">
-      <form onSubmit={handleSubmit}>
-        <input
-          type="search"
-          autoFocus={true}
-          placeholder={"City"}
-          onChange={changeCity}
-        />
+    <div className="Dictionary">
+      <form onSubmit={search}>
+        <input type="search" onChange={handleKeywordChange} />
         <input type="submit" className="btn btn-dark" value="Search" />
       </form>
-      <h2>{message}</h2>
     </div>
   );
 }
