@@ -8,10 +8,14 @@
   font-size: calc(10px + 2vmin);
 }
 a {
-  color: #61dafb;
+  color: #827397;
   text-decoration: none;
 }
 .App-footer {
   text-align: center;
   margin: 30px 0;
+}
+.Header {
+  color: #4d4c7d;
+  font-size: calc(1.325rem + 0.9vw);
 }
